@@ -26,9 +26,11 @@ RUN mv /opt/minecraft/forge-1.12.2-14.23.5.2814-universal.jar /opt/minecraft/min
 # install mods
 #   Pixelmon-1.12.2-7.0.1.jar               (1.12.2 for the Forge version and 7.0.1 is the Pixelmon version)
 #   extrautils2-1.12-1.9.8.jar              (1.12   for the Forge version and 1.9.8 is the extrautils2 verison)
+#   refinedstorage-1.6.12.jar               (compatabile with Minecraft version 1.12.2)
 RUN mkdir /opt/minecraft/mods \
   && wget -O /opt/minecraft/mods/Pixelmon.jar https://dl.reforged.gg/2TBQB2n \
-  && wget -O /opt/minecraft/mods/extrautils2.jar https://edge.forgecdn.net/files/2632/255/extrautils2-1.12-1.9.8.jar
+  && wget -O /opt/minecraft/mods/extrautils2.jar https://edge.forgecdn.net/files/2632/255/extrautils2-1.12-1.9.8.jar \
+  && wget -O /opt/minecraft/mods/refinedstorage.jar https://edge.forgecdn.net/files/2642/249/refinedstorage-1.6.12.jar
 
 
 # cleanup
